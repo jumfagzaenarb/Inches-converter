@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+</head>
+<body>
+    <p>
+        <label for="">Inch</label>
+        <input type="number" id="inputInch" placeholder="Inch"
+         oninput="InchConverter(this.value)" onchange="InchConverter(this.value)">
+    </p>
+    <p>cm: <span id="outputCentimeters"></span></p>
+
+
+    <script>
+        function InchConverter(valNum) {
+            document.getElementById("outputCentimeters").innerHTML = valNum * 2.54
+        }
+    </script>
+</body>
+</html>
